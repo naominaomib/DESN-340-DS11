@@ -1,0 +1,274 @@
+
+/* VARIABLES */
+
+:root {
+    --black: #0D0D0D;
+    --spacing-8: 8px;
+    --spacing-16: 16px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-80: 80px;
+}
+
+/* GLOBAL STYLES */
+
+/* Layout*/
+
+body {
+    width: 100%;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-top {
+    align-items: top;
+}
+
+.margin-default {
+    margin: 80px;
+}
+
+.col-8 {
+    width: 72%;
+}
+
+.col-4 {
+    width: 22%
+}
+
+.img-full {
+    width: 100%;
+    background-image: url(images/yama-hero-1.jpg);
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.img-margin {
+    width: 100%;
+    height: auto;
+    margin: var(--spacing-80);
+}
+
+.img-col-8 {
+    width: 100%;
+}
+
+
+/* Text Styles */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: var(--black);
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+.h1-reverse {
+    color: var(--black);
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+h3 {
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    color: var(--black);
+    margin: 0px 0px 24px 0px;
+}
+
+p {
+    margin: 0px 0px 16px 0px;
+    color: var(--black);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.p-bold {
+    color: var(--black);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.p-lg {
+    color: var(--black);
+    font-family: "EB Garamond";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 24px 0px;
+}
+
+.graphic-text {
+    color: rgba(0, 0, 0, 0.10);
+    font-family: "EB Garamond";
+    font-size: 142px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Buttons */
+
+.btn-dark{
+    background-color: var(--black);
+    display: flex;
+    padding: 16px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    outline: none;
+    border-style: none;
+}
+
+.btn-dark:hover {
+    outline: 2px solid var(--black);
+    background-color: white;
+    color: var(--black);
+    border-style: none;
+}
+
+.btn-line {
+    display: flex;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-bottom: 2px solid #000;
+    background-color: white;
+}
+
+.reverse {
+    color: white !important;
+}
+
+
+/* HEADER */
+
+#top-nav {
+    margin: 40px var(--spacing-80) 40px var(--spacing-80);
+}
+
+#yama-logo {
+    width: 152px;
+}
+
+#top-nav li {
+    list-style-type: none;
+    margin-right: var(--spacing-24);
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+#top-nav li:hover {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 4px;
+}
+
+.all-caps {
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-top: 0px;
+}
+
+
+
+
+
+
+/* HERO */
+
+.subhead {
+    width: 20%;
+    padding: 12px 0px 12px var(--spacing-24);
+    border-left: 2px solid var(--black);
+}
+
+
+
+
+
+
+.graphic-text-wrap {
+    margin: 0px var(--spacing-80) 0px auto;
+}
+
+#explore-img {
+    background-image: url(images/yama-sliders.png);
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    display: flex; 
+}
+
+.explore h2 {
+    color:white;
+    margin: auto;
+}
+
+.explore p {
+    color:white;
+    margin: auto;
+}
+
+.explore button {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color: white;
+    margin: auto;
+}
+
+.explore {
+    margin: 180px auto 180px auto;
+}
+
